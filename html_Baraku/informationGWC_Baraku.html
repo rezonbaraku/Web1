@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<!--Rezon Baraku-->
+<html>
+<head>
+    <link rel="stylesheet" href="home.css">
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">-->
+
+    <!-- Favicon -->
+<!--
+    <link href="img/favicon.ico" rel="icon">
+
+     Google Web Fonts 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+-->
+
+    <!-- Icon Font Stylesheet -->
+<!--
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+-->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- Acticate dropdown -->
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/home.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    
+    
+    
+       <!-- Rez Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Rez Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+    <title>Information about the Great Wall of China</title>
+    <style>
+        body {
+            background: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+            padding: 0px;
+            margin: 0px;
+            font-family: sans-serif;
+        }
+
+        h3 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .myContent {
+            width: 1240px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px
+        }
+
+        .photo1 {
+            width: 1240px;
+            height: 500px;
+            margin-right: -350px;
+        }
+
+        .title {
+            display: flex;
+
+        }
+
+        .titleText {
+            position: absolute;
+            left: 150px;
+            top: 130px;
+        }
+
+
+        .facts {
+            display: flex;
+        }
+
+        .fact {
+            background: white;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            box-shadow: 3px 3px 12px 2px rgba(black, 0.6);
+            transition: 0.2s;
+            transform: translateX(2rem);
+        }
+
+        .fact:not(:first-child) {
+            margin-left: -2rem;
+        }
+
+        .fact:not(:last-child):hover,
+        .fact:not(:last-child):focus-within {
+            transform: translateY(-1rem);
+        }
+
+        .row.intriguing,
+        .row.general {
+            margin-bottom: 50px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <img src="../../images/logo.png" class=" logo1">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div id="right">
+                <ul class="navbar-nav">
+                    <li class="nav-item active lis">
+                        <a class="nav-link text-light" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown lis">
+                        <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            7 Wonders of the world
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a style="font-size: 15px;" class="dropdown-item" href="../../Student/html_Baraku/Colosseum_Baraku.html">The Colosseum, Rome, Italy.</a>
+                            <a style="font-size: 15px;" class="dropdown-item" href="../../Student/html_Baraku/GreatWallofChina_Baraku.html">The Great Wall of China.</a>
+                            <a style="font-size: 15px;" class="dropdown-item" href="#">The Taj Mahal, India.</a>
+                            <a style="font-size: 15px;" class="dropdown-item" href="#">Christ the Redeemer, Brazil.</a>
+                            <a style="font-size: 15px;" class="dropdown-item" href="../../Student/Html_Beqiri/machuPichu_Beqiri.html">Machu Picchu, Peru.</a>
+                            <a style="font-size: 15px;" class="dropdown-item" href="#">Chichén Itzá, Mexico.</a>
+                            <a style="font-size: 15px;" class="dropdown-item" href="#">Petra, Jordan.</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown lis">
+                        <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About us
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a style="font-size: 15px;" class="dropdown-item" href="../../Student/Html_Beqiri/kronAU_Beqiri.htmlkronAU.html">Kron Beqiri</a>
+                            <a style="font-size: 15px;" class="dropdown-item" href="../../Student/html_Baraku/AboutUs_Baraku.html">Rezon Baraku</a>
+                            <a style="font-size: 15px;" class="dropdown-item" href="#">Arb Hajdari</a>
+                            <a style="font-size: 15px;" class="dropdown-item" href="#">Laith Hnait</a>
+
+
+
+                        </div>
+                    </li>
+                    <li class="nav-item lis">
+                        <a class="nav-link text-light click" href="../../Student/Html_Beqiri/guideYourself_Beqiri.html">Guide yourself</a>
+                    </li>
+                    <li class="nav-item lis">
+                        <a class="nav-link text-light click" href="../../Student/html_Baraku/quiz_Baraku.html">Quiz</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--End of Navbar-->
+
+
+
+    <div class="myContent">
+        <div class="p-5 mb-4 rounded-3">
+            <div class="title">
+                <img class="photo1" src="../../images/chinawall1.png">
+                <div class="titleText">
+                    <h1 class="display-5 fw-bold">Information about the Great Wall of China</h1>
+                </div>
+            </div>
+        </div>
+        <div class="generalInfo">
+            <h3>General information about The Great Wall of China</h3>
+            <hr />
+            <div class="row general">
+                <div class="col">
+                    <p style="text-align: justify">The purpose of The Great Wall of China was to defend their territory from different neighbor tribes. It is believed that the construction began as early as the 7rd century BC and was constantly enlarged and strengthened till the 17th century. The Great Wall of China did not only serve as a way to defend against invasion it also played a major role in China's economic development. Created safe trade routes for the Chinese population. <br>
+                        It is considered the longest man-made structure in the world. The total length of The Great Wall is 21,196 km. It is believed that over 2 million people contributed in building the Great Wall of China.<br>
+                        In 1987 the Great Wall of China became a UNESCO World Heritage Site and in 2007 it was officially declared as one of the New Seven Wonders of the World.
+                    </p>
+                </div>
+                <div class="col">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../../images/GWC1carousel.jpg" class="d-block w-100 img-fluid" style="height: 400px" alt="Picture of The Great Wall of China">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../../images/GWC2carousel.jpg" class="d-block w-100 img-fluid" style="height: 400px" alt="Picture of The Great Wall of China">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../../images/GWC3carousel.jpg" class="d-block w-100 img-fluid" style="height: 400px" alt="Picture of The Great Wall of China">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Intriguing things to try when visiting The Great Wall of China</h3>
+            <hr>
+            <div class="row intriguing" style="text-align: justify">
+                <div class="col">
+                    <div class="card shadow" style="background-color:#ffeecc">
+                        <img src="../../images/MarathonGWC.jpg" style="height:220px" class="card-img-top img-fluid" alt="History of the Great Wall of China">
+                        <div class="card-body">
+                            <h4 class="card-title">Great Wall Marathon</h4>
+                            <p class="card-text" style="height: 240px">
+                                Are you a person that enjoys physical activities and challenges, if so then you must try the Great Wall Marathon. This is a once in a lifetime unique experience that you can participate on 16th of September 2023. If you think the marathon is too difficult no worries, runners of all levels can take on the challenge. Depending on your experience and training you can choose one of these 3 options: The Full Marathon (42.2 km), The Half Marathon (21.2 km), or The Fun Run (8.5 km).
+                                <br>
+
+                            </p>
+                            <a class="btn btn-primary" href="https://great-wall-marathon.com/">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow" style="background-color:#ffeecc">
+                        <img src="../../images/campingGWC.jpg" style="height: 220px" class="card-img-top img-fluid" alt="Camping on the the Great Wall">
+                        <div class="card-body">
+                            <h4 class="card-title">Camping on The Great Wall</h4>
+                            <p class="card-text" style="height: 240px">
+                                If you are an outdoorsy person than this is a must try. Spending a night camping in The Great Wall is a surreal experience. Looking down from a Great Wall ridge, listening to sounds in the wild. You can experience how China's lookout felt keeping watch many centuries ago.
+                                <br>
+                                Best season for camping is early autumn and best section is Jiankou if you are lucky enough you can at night also see the milky way.<br>
+
+
+
+
+                            </p>
+                            <a class="btn btn-primary " href="https://www.chinahighlights.com/greatwall/tours/jiankou-camping.htm#inquirybutton">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow" style="background-color:#ffeecc">
+                        <img src="../../images/CablecarGWC.jpg" style="height:220px" class="card-img-top img-fluid" alt="Go for a ride">
+                        <div class="card-body">
+                            <h4 class="card-title">Go for a ride</h4>
+                            <p class="card-text" style="height: 240px">
+                                If you find hiking up The Great Wall to difficult or you just want to try something different well you can. You can use cable cars to take in all the scenic views around The Great Wall without feeling tired or if you prefer something more interesting you can also use the toboggan roll down The Great Wall in a fun and interesting way while experiencing the great views.
+                                <br>
+                            </p>
+                            <a class="btn btn-primary" href="https://www.chinadiscovery.com/beijing-tours/beijing-transportation/mutianyu-great-wall-cable-car.html">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3>Intresting facts about the Great Wall of China </h3>
+            <hr />
+
+            <div class="cards facts">
+                <div class="card fact" style="background-color:#ffeecc">
+                    <h2>Fact #1</h2>
+                    <p>The Great Wall of China is not visible from space</p>
+                </div>
+                <div class="card fact" style="background-color:#ffe6b3">
+                    <h2>Fact #2</h2>
+                    <p>The Great Wall of China is half the length of the equator</p>
+                </div>
+                <div class="card fact" style="background-color:#ffdd99">
+                    <h2>Fact #3</h2>
+                    <p>Rice was used to build the Great Wall</p>
+                </div>
+                <div class="card fact" style="background-color:#ffd480">
+                    <h4>Fact #4</h4>
+                    <p>The Great Wall of China is slowly disappearing</p>
+                </div>
+                <div class="card fact" style="background-color:#ffcc66">
+                    <h4>Fact #5</h4>
+                    <p>The Great Wall is not just one wall</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--start of the footer-->
+    <footer style="position: static;bottom:0px;">
+        <div class="row">
+            <div class="col">
+                <a href="#" class="logo">24/7</a>
+                <p>The reason for choosing this name is because <br> we tried to refer to something that is always available.We hope that our company will help you in your traveling.We always strike for the best</p>
+            </div>
+            <div class="col2">
+                <h3 style="color: aliceblue;">Links</h3>
+                <ul>
+                    <li style="position: absolute;left:40px;top:70px"><a href="../../Student/Html_Beqiri/index_Beqiri.html">Back to home</a></li>
+                    <li style="position: absolute;left:40px;top:110px"><a href="../../Student/Html_Beqiri/references_Beqiri.html">References</a></li>
+                </ul>
+            </div>
+            <div class="col3">
+                <h3>Social</h3>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body></html>

@@ -1,0 +1,478 @@
+
+<!DOCTYPE html>
+<!--Rezon Baraku-->
+<html>
+<head>
+    <link rel="stylesheet" href="home.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+    <!-- Acticate dropdown -->
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/home.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Quiz</title>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            background-color: #cbebe9;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-position: center;
+            color: #000;
+            overflow-x: hidden;
+            background-image: url();
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        .card {
+            padding: 30px 40px;
+            margin-top: 60px;
+            margin-bottom: 60px;
+            border: none !important;
+            box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2)
+        }
+
+        .form-control-label {
+            margin-bottom: 0
+        }
+
+        input,
+        textarea,
+        button {
+            padding: 8px 15px;
+            border-radius: 5px !important;
+            margin: 5px 0px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            font-size: 18px !important;
+            font-weight: 300
+        }
+
+        input:focus,
+        textarea:focus {
+            -moz-box-shadow: none !important;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+            border: 1px solid #00BCD4;
+            outline-width: 0;
+            font-weight: 400
+        }
+
+        .btn-block {
+            text-transform: uppercase;
+            font-size: 15px !important;
+            font-weight: 400;
+            height: 43px;
+            cursor: pointer
+        }
+
+        .btn-block:hover {
+            color: #fff !important
+        }
+
+        button:focus {
+            -moz-box-shadow: none !important;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+            outline-width: 0
+        }
+
+        .myForm {
+            margin: 35px;
+        }
+
+        .divider {
+            position: relative;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            height: 1px;
+        }
+
+        .div-transparent:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 5%;
+            right: 5%;
+            width: 90%;
+            height: 1px;
+            background-image: linear-gradient(to right, transparent, rgb(48, 49, 51), transparent);
+        }
+    </style>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <img src="../../images/logo.png" class=" logo1">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div id="right">
+                <ul class="navbar-nav">
+                    <li class="nav-item active lis">
+                        <a class="nav-link text-light" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown lis">
+                        <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            7 Wonders of the world
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a style="font-size: 15px;" class="dropdown-item" href="../../Student/html_Baraku/Colosseum_Baraku.html">The Colosseum, Rome, Italy.</a>
+                            <a style="font-size: 15px;" class="dropdown-item" href="../../Student/html_Baraku/GreatWallofChina_Baraku.html">The Great Wall of China.</a>
+                            <a style="font-size: 15px;" class="dropdown-item" href="#">The Taj Mahal, India.</a>
+                            <a style="font-size: 15px;" class="dropdown-item" href="#">Christ the Redeemer, Brazil.</a>
+                            <a style="font-size: 15px;" class="dropdown-item" href="../../Student/Html_Beqiri/machuPichu_Beqiri.html">Machu Picchu, Peru.</a>
+                            <a style="font-size: 15px;" class="dropdown-item" href="#">Chichén Itzá, Mexico.</a>
+                            <a style="font-size: 15px;" class="dropdown-item" href="#">Petra, Jordan.</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown lis">
+                        <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About us
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a style="font-size: 15px;" class="dropdown-item" href="../../Student/Html_Beqiri/kronAU_Beqiri.htmlkronAU.html">Kron Beqiri</a>
+                            <a style="font-size: 15px;" class="dropdown-item" href="../../Student/html_Baraku/AboutUs_Baraku.html">Rezon Baraku</a>
+                            <a style="font-size: 15px;" class="dropdown-item" href="#">Arb Hajdari</a>
+                            <a style="font-size: 15px;" class="dropdown-item" href="#">Laith Hnait</a>
+
+
+
+                        </div>
+                    </li>
+                    <li class="nav-item lis">
+                        <a class="nav-link text-light click" href="../../Student/Html_Beqiri/guideYourself_Beqiri.html">Guide yourself</a>
+                    </li>
+                    <li class="nav-item lis">
+                        <a class="nav-link text-light click" href="../../Student/html_Baraku/quiz_Baraku.html">Quiz</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--End of Navbar-->
+
+    <div class="container-fluid px-1 py-5 mx-auto">
+        <div class="row d-flex justify-content-center">
+            <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+                <h2>7 World Wonders quiz!</h2>
+                <h4>
+                    Answer a few questions<br />
+                    and evaluate your knowledge based on your score.
+                </h4>
+                <div class="card">
+                    <form class="form-card" onsubmit="event.preventDefault()">
+                        <div class="row justify-content-between text-left">
+                            <div class="row justify-content-between text-left">
+                                <div class="form-group col-12 flex-column d-flex">
+                                    <label class="form-control-label px-3 m-2">
+                                        <h5>Q1. Which one is not a new 7 World Wonder?</h5>
+                                    </label>
+                                    <div class="d-flex flex-column align-items-start">
+                                        <div class="m-2">
+                                            <input class="form-check-input" type="radio" name="question11" id="answer11" />
+                                            <label class="form-check-label" for="answer11">
+                                                The Great Wall of China
+                                            </label>
+                                        </div>
+                                        <div class="m-2">
+                                            <input class="form-check-input" type="radio" name="question11" id="answer12" />
+                                            <label class="form-check-label" for="answer12">
+                                                The Colosseum
+                                            </label>
+                                        </div>
+                                        <div class="m-2">
+                                            <input class="form-check-input" type="radio" name="question11" id="answer13" />
+                                            <label class="form-check-label" for="answer13">
+                                                The Great Pyramid of Giza
+                                            </label>
+                                        </div>
+                                        <div class="m-2">
+                                            <input class="form-check-input" type="radio" name="question11" id="answer14" />
+                                            <label class="form-check-label" for="answer14">
+                                                Machu Picchu
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <label class="form-control-label px-3 m-2">
+                                        <h5>Q2. In which country is a new 7 World Wonder home to?</h5>
+                                    </label>
+                                    <div class="d-flex flex-column align-items-start">
+                                        <div class="m-2">
+                                            <input class="form-check-input" type="radio" name="question21" id="answer21" />
+                                            <label class="form-check-label" for="answer21">
+                                                Ecuador
+                                            </label>
+                                        </div>
+                                        <div class="m-2">
+                                            <input class="form-check-input correct2" type="radio" name="question21" id="answer22" />
+                                            <label class="form-check-label" for="answer22">
+                                                Peru
+                                            </label>
+                                        </div>
+                                        <div class="m-2">
+                                            <input class="form-check-input" type="radio" name="question21" id="answer23" />
+                                            <label class="form-check-label" for="answer23">
+                                                Panama
+                                            </label>
+                                        </div>
+                                        <div class="m-2">
+                                            <input class="form-check-input" type="radio" name="question21" id="answer24" />
+                                            <label class="form-check-label" for="answer24">
+                                                Colombia
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <label class="form-control-label px-3 m-2">
+                                        <h5>Q3. What year were the new 7 World Wonders declared</h5>
+                                    </label>
+                                    <div class="d-flex flex-column align-items-start">
+                                        <div class="m-2">
+                                            <input class="form-check-input correct3" type="radio" name="question31" id="answer31" />
+                                            <label class="form-check-label" for="answer31">
+                                                2007
+                                            </label>
+                                        </div>
+                                        <div class="m-2">
+                                            <input class="form-check-input" type="radio" name="question31" id="answer32" />
+                                            <label class="form-check-label" for="answer32">
+                                                1997
+                                            </label>
+                                        </div>
+                                        <div class="m-2">
+                                            <input class="form-check-input" type="radio" name="question31" id="answer33" />
+                                            <label class="form-check-label" for="answer33">
+                                                1987
+                                            </label>
+                                        </div>
+                                        <div class="m-2">
+                                            <input class="form-check-input" type="radio" name="question31" id="answer34" />
+                                            <label class="form-check-label" for="answer34">
+                                                2017
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <label class="form-control-label px-3 m-2">
+                                        <h5>Q4. Which wonder was discovered by a Swiss explorer in 181</h5>
+                                    </label>
+                                    <div class="d-flex flex-column align-items-start">
+                                        <div class="m-2">
+                                            <input class="form-check-input" type="radio" name="question41" id="answer41" />
+                                            <label class="form-check-label" for="answer41">
+                                                The Great Wall of China
+                                            </label>
+                                        </div>
+                                        <div class="m-2">
+                                            <input class="form-check-input correct4" type="radio" name="question41" id="answer42" />
+                                            <label class="form-check-label" for="answer42">
+                                                Petra
+                                            </label>
+                                        </div>
+                                        <div class="m-2">
+                                            <input class="form-check-input" type="radio" name="question41" id="answer43" />
+                                            <label class="form-check-label" for="answer43">
+                                                The Colosseum
+                                            </label>
+                                        </div>
+                                        <div class="m-2">
+                                            <input class="form-check-input" type="radio" name="question41" id="answer44" />
+                                            <label class="form-check-label" for="answer44">
+                                                The Taj Mahal
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <label class="form-control-label px-3 m-2">
+                                        <h5>Q5. What civilization built the Chichen Itza</h5>
+                                    </label>
+                                    <div class="d-flex flex-column align-items-start">
+                                        <div class="m-2">
+                                            <input class="form-check-input" type="radio" name="question51" id="answer51" />
+                                            <label class="form-check-label" for="answer51">
+                                                The Egyptians
+                                            </label>
+                                        </div>
+                                        <div class="m-2">
+                                            <input class="form-check-input correct5" type="radio" name="question51" id="answer52" />
+                                            <label class="form-check-label" for="answer52">
+                                                The Mayans
+                                            </label>
+                                        </div>
+                                        <div class="m-2">
+                                            <input class="form-check-input" type="radio" name="question51" id="answer53" />
+                                            <label class="form-check-label" for="answer53">
+                                                The Incas
+                                            </label>
+                                        </div>
+                                        <div class="m-2">
+                                            <input class="form-check-input" type="radio" name="question51" id="answer54" />
+                                            <label class="form-check-label" for="answer54">
+                                                The Germans
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <label class="form-control-label px-3 m-2">
+                                        <h5>Q6. The Taj Mahal was built by a Mughal Emperor to honor his late?</h5>
+                                    </label>
+                                    <div class="d-flex flex-column align-items-start">
+                                        <div class="m-2">
+                                            <input class="form-check-input" type="radio" name="question61" id="answer61" />
+                                            <label class="form-check-label" for="answer61">
+                                                Son
+                                            </label>
+                                        </div>
+                                        <div class="m-2">
+                                            <input class="form-check-input" type="radio" name="question61" id="answer62" />
+                                            <label class="form-check-label" for="answer62">
+                                                Daughter
+                                            </label>
+                                        </div>
+                                        <div class="m-2">
+                                            <input class="form-check-input correct6" type="radio" name="question61" id="answer63" />
+                                            <label class="form-check-label" for="answer63">
+                                                Wife
+                                            </label>
+                                        </div>
+                                        <div class="m-2">
+                                            <input class="form-check-input" type="radio" name="question61" id="answer64" />
+                                            <label class="form-check-label" for="answer64">
+                                                Father
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <label class="form-control-label px-3 m-2">
+                                        <h5>Q7. Which wonder is knows as the city of stones</h5>
+                                    </label>
+                                    <div class="d-flex flex-column align-items-start">
+                                        <div class="m-2">
+                                            <input class="form-check-input" type="radio" name="question71" id="answer71" />
+                                            <label class="form-check-label" for="answer71">
+                                                The Great Wall of China
+                                            </label>
+                                        </div>
+                                        <div class="m-2">
+                                            <input class="form-check-input" type="radio" name="question71" id="answer72" />
+                                            <label class="form-check-label correct7" for="answer72">
+                                                Petra
+                                            </label>
+                                        </div>
+                                        <div class="m-2">
+                                            <input class="form-check-input" type="radio" name="question71" id="answer73" />
+                                            <label class="form-check-label" for="answer73">
+                                                Taj Mahal
+                                            </label>
+                                        </div>
+                                        <div class="m-2">
+                                            <input class="form-check-input" type="radio" name="question71" id="answer74" />
+                                            <label class="form-check-label" for="answer74">
+                                                Machu Picchu
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider div-transparent"></div>
+                        <div class="row justify-content-end">
+                            <div>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" onClick="result()" data-bs-target="#exampleModal">
+                                    Submit quiz
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header align-items-center">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer style="position: static; bottom:0px;">
+        <div class="row">
+            <div class="col">
+                <a href="#" class="logo">24/7</a>
+                <p>The reason for choosing this name is because we tried to refer to something that is always available. We hope that our company will help you in your traveling. We always strike for the best</p>
+            </div>
+            <div class="col2">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="../../Student/Html_Beqiri/index_Beqiri.html">Back to home</a></li>
+                    <li><a href="../../Student/Html_Beqiri/references_Beqiri.html">References</a></li>
+                </ul>
+            </div>
+            <div class="col3">
+                <h3>Social</h3>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <ul>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!--End of Footer-->
+
+    <script type="text/javascript">
+        function result() {
+            console.log("hello");
+            var score = 0;
+            if (document.getElementById("answer13").checked) {
+                score++;
+            }
+            if (document.getElementById("answer22").checked) {
+                score++;
+            }
+            if (document.getElementById("answer31").checked) {
+                score++;
+            }
+            if (document.getElementById("answer42").checked) {
+                score++;
+            }
+            if (document.getElementById("answer52").checked) {
+                score++;
+            }
+            if (document.getElementById("answer63").checked) {
+                score++;
+            }
+            if (document.getElementById("answer72").checked) {
+                score++;
+            }
+
+            document.getElementById("exampleModalLabel").innerHTML = "Your score is: " + score + " out of 7!";
+            // to print on browser
+            // document.write("Your score is:"+score);
+        }
+    </script>
+</body></html>

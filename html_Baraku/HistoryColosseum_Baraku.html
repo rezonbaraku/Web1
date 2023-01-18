@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<!--Rezon Baraku-->
+<html>
+<head>
+    <link rel="stylesheet" href="home.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+    <!-- Acticate dropdown -->
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/home.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Rez Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Rez Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>History of the Colosseum</title>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            background-color:
+                font-family: sans-serif;
+        }
+
+        .p-5.mb-4.rounded-3 {
+            background-image: url(../../images/colosseumbackground.jpg);
+            height: 600px;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            margin-bottom: 0;
+        }
+
+        .myContent {
+            height: 600px;
+        }
+
+
+
+        /* The actual timeline (the vertical ruler) */
+        .main-timeline-2 {
+            position: relative;
+        }
+
+        /* The actual timeline (the vertical ruler) */
+        .main-timeline-2::after {
+            content: "";
+            position: absolute;
+            width: 3px;
+            background-color: chocolate;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        /* Container around content */
+        .timeline-2 {
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+
+        /* The circles on the timeline */
+        .timeline-2::after {
+            content: "";
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -11px;
+            background-color: chocolate;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        /* Place the container to the left */
+        .left-2 {
+            padding: 0px 40px 20px 0px;
+            left: 0;
+        }
+
+        /* Place the container to the right */
+        .right-2 {
+            padding: 0px 0px 20px 40px;
+            left: 50%;
+        }
+
+        /* Add arrows to the left container (pointing right) */
+        .left-2::before {
+            content: " ";
+            position: absolute;
+            top: 18px;
+            z-index: 1;
+            right: 30px;
+            border: medium solid white;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent white;
+        }
+
+        /* Add arrows to the right container (pointing left) */
+        .right-2::before {
+            content: " ";
+            position: absolute;
+            top: 18px;
+            z-index: 1;
+            left: 30px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent white transparent transparent;
+        }
+
+        /* Fix the circle for containers on the right side */
+        .right-2::after {
+            left: -15px;
+        }
+
+        /* Media queries - Responsive timeline on screens less than 600px wide */
+        @media screen and (max-width: 600px) {
+
+            /* Place the timelime to the left */
+            .main-timeline-2::after {
+                left: 30px;
+            }
+
+            /* Full-width containers */
+            .timeline-2 {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+
+            /* Make sure that all arrows are pointing leftwards */
+            .timeline-2::before {
+                left: 60px;
+                border: medium solid white;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent white transparent transparent;
+            }
+
+            /* Make sure all circles are at the same spot */
+            .left-2::after,
+            .right-2::after {
+                left: 18px;
+            }
+
+            .left-2::before {
+                right: auto;
+            }
+
+            /* Make all right containers behave like the left ones */
+            .right-2 {
+                left: 0%;
+            }
+        }
+
+        /* Style the button */
+        #back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+        }
+
+        .year {
+            color: darkgrey;
+        }
+
+        .text {
+            text-align: justify
+        }
+
+        .titleText {
+            position: absolute;
+            left: 450px;
+
+        }
+    </style>
+
+</head>
+<!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <img src="../../images/logo.png" class=" logo1">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div id="right">
+                <ul class="navbar-nav">
+                    <li class="nav-item active lis">
+                        <a class="nav-link text-light" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown lis">
+                        <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            7 Wonders of the world
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a style="font-size: 15px;" class="dropdown-item" href="../../Student/html_Baraku/Colosseum_Baraku.html">The Colosseum, Rome, Italy.</a>
+                            <a style="font-size: 15px;" class="dropdown-item" href="../../Student/html_Baraku/GreatWallofChina_Baraku.html">The Great Wall of China.</a>
+                            <a style="font-size: 15px;" class="dropdown-item" href="#">The Taj Mahal, India.</a>
+                            <a style="font-size: 15px;" class="dropdown-item" href="#">Christ the Redeemer, Brazil.</a>
+                            <a style="font-size: 15px;" class="dropdown-item" href="../../Student/Html_Beqiri/machuPichu_Beqiri.html">Machu Picchu, Peru.</a>
+                            <a style="font-size: 15px;" class="dropdown-item" href="#">Chichén Itzá, Mexico.</a>
+                            <a style="font-size: 15px;" class="dropdown-item" href="#">Petra, Jordan.</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown lis">
+                        <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About us
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a style="font-size: 15px;" class="dropdown-item" href="../../Student/Html_Beqiri/kronAU_Beqiri.htmlkronAU.html">Kron Beqiri</a>
+                            <a style="font-size: 15px;" class="dropdown-item" href="../../Student/html_Baraku/AboutUs_Baraku.html">Rezon Baraku</a>
+                            <a style="font-size: 15px;" class="dropdown-item" href="#">Arb Hajdari</a>
+                            <a style="font-size: 15px;" class="dropdown-item" href="#">Laith Hnait</a>
+
+
+
+                        </div>
+                    </li>
+                    <li class="nav-item lis">
+                        <a class="nav-link text-light click" href="../../Student/Html_Beqiri/guideYourself_Beqiri.html">Guide yourself</a>
+                    </li>
+                    <li class="nav-item lis">
+                        <a class="nav-link text-light click" href="../../Student/html_Baraku/quiz_Baraku.html">Quiz</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--End of Navbar-->
+
+    
+<body>
+    <div class="myContent">
+        <div class="p-5 mb-4 rounded-3">
+            <div class="container-fluid py-5">
+                <div class="titleText">
+                    <h1 class="display-5 fw-bold">History about the Colosseum</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section style="background-color: #F0F2F5;">
+        <div class="container py-5">
+            <div class="main-timeline-2">
+                <div class="timeline-2 left-2">
+                    <div class="card shadow">
+                        <img src="../../images/ColosseumH1.jpg" class="card-img-top img-fluid" alt="History about the Colosseum">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold mb-4">Colosseum construction</h4>
+                            <p class="mb-4 year"><i> 70-72 CE</i></p>
+                            <p class="mb-0 text">The Colosseum construction started around 72 CE during the reign of Emperor Vespasian of the Flavian dynasty. Vespasian considered it a gift to the Roman people. Vespasian wanted to build the Colosseum as a way to revitalize Rome after a very dark period.<br>
+                                Vespasian decided to replace the emperor's private lake for a public amphitheater that could accommodate tens of thousands of Romans. In the Colosseum, the public could enjoy gladiatorial battles, other forms of entertainment and also show the world the power and the might of Rome.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-2 right-2">
+                    <div class="card shadow">
+                        <img src="../../images/ColosseumH2.jpg" class="card-img-top img-fluid" alt="The Battles">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold mb-4">The Grand opening</h4>
+                            <p class="mb-4 year"><i> 80 CE</i></p>
+                            <p class="mb-0 text">The Colosseum finished constructions in a relatively short amount of time considering the size of the Colosseum and also the type of equipment used. In 80 CE the Colosseum was officially open to the public.<br>
+                                The person to open the Colosseum was Vespasian's son Titus, the original name was the Flavian amphitheater and to celebrate the opening Titus declared 100 days of games, which included gladiatorial battles and animal fights. Over 50,000 spectators came and watched the games.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-2 left-2">
+                    <div class="card shadow">
+                        <img src="../../images/ColosseumH3.jpg" class="card-img-top img-fluid" alt="Responsive image">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold mb-4">The Colosseum Over the Centuries</h4>
+                            <p class="mb-4 year"><i>200-1700</i></p>
+                            <p class="mb-0 text">The usage of Colosseum changed overtime. For about four centuries the Colosseum saw active use however with the struggles of the Roman empire and the gradual change of public taste, around the 6th century the Colosseum saw the end of wild animals fights and the end of gladiatorial battles.<br>
+                                After that, the Colosseum was used as a church and place for public political debates till eventually around the 18th century it was completed abandoned. The Colosseum had suffered damage from earthquakes, lightnings and was used as quarry for different building projects
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-2 right-2">
+                    <div class="card shadow">
+                        <img src="../../images/ColosseumH4.jpg" class="card-img-top img-fluid" alt="Responsive image">
+                        <div class="card-body p-4">
+                            <h4 class="fw-bold mb-4"> 19th Century - Present day</h4>
+                            <p class="mb-4 year"><i>1901-2023</i></p>
+                            <p class="mb-0 text"> In the 19th Century various popes, raised the issue that the Colosseum should be protected as a holy Christian site. Unfortunately, by the 20th Century a combination of carelessness, weather and natural disasters had destroyed almost two-thirds of the Colosseum. <br>
+                                Restoration work started in the 1990s and has continued as till this day. Today the Colosseum remains a popular destination for travelers from across the world.
+                            </p>
+                        </div>
+                    </div>
+                </div>r
+            </div>
+        </div>
+    </section>
+    <button type="button" class="btn btn-primary" id="back-to-top">Go back to top</button>
+    
+    <!--Footer-->
+    <footer style="position: static; bottom:0px;">
+        <div class="row">
+            <div class="col">
+                <a href="#" class="logo">24/7</a>
+                <p>The reason for choosing this name is because we tried to refer to something that is always available. We hope that our company will help you in your traveling. We always strike for the best</p>
+            </div>
+            <div class="col2">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="../../Student/Html_Beqiri/index_Beqiri.html">Back to home</a></li>
+                    <li><a href="../../Student/Html_Beqiri/references_Beqiri.html">References</a></li>
+                </ul>
+            </div>
+            <div class="col3">
+                <h3>Social</h3>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <ul>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <!--End of Footer-->
+    <script>
+        let button = document.getElementById("back-to-top");
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        }
+        button.addEventListener("click", backToTop);
+
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            behaviour: "smooth";
+        }
+    </script>
+</body></html>
